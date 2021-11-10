@@ -1,0 +1,778 @@
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+header,
+section,
+footer {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0px 0px 30px #660033;
+  margin-top: 15px;
+}
+
+.destacado_ladrillo1 {
+  color: #660033;
+}
+
+header {
+  background: linear-gradient(#a85958, #ffffff, #a85958);
+  height: 160px;
+}
+
+#caja_logo {
+  width: 120px;
+  height: 135px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+#caja_marca {
+  width: 460px;
+  height: 90px;
+  float: right;
+  margin-right: 175px;
+}
+
+#caja_lema {
+  width: 700px;
+  height: 40px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 55px;
+}
+
+#caja_hamburuesa {
+  display: none;
+}
+
+#txt_menu {
+  display: none;
+}
+
+#seccion_botonera {
+  height: 70px;
+  background: linear-gradient(#a85958, #ffffff, #a85958);
+  box-shadow: 0px 0px 30px #660033;
+  position: sticky;
+  top: 5px;
+  display: block;
+  z-index: 100;
+}
+
+#caja_botonera_principal {
+  width: 960px;
+  height: 50px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 0px;
+  display: block;
+}
+
+#seccion_inicio {
+  background-image: none;
+  height: 540px;
+  background-size: cover;
+}
+
+#seccion_servicios2 {
+  background-image: url(imagenes/construccion_edificio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 450px;
+}
+
+.fondoConstruccion {
+  background-image: url(imagenes/construccion_edificio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#titulo_servicios2 {
+  background-color: none;
+  height: 52px;
+}
+
+#caja_txt_servicios2 {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#caja_contenido_servicios2 {
+  height: auto;
+  background-color: none;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+#tarjetas_servicios {
+  background-color: none;
+  height: 375px;
+  margin-top: 20px;
+}
+
+#tarjeta_servicios_1 {
+  background-color: none;
+}
+
+#tarjeta_servicios_2 {
+  background-color: none;
+}
+
+#tarjeta_servicios_3 {
+  background-color: none;
+}
+
+.estandarcajas {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 30px #660033;
+}
+
+.card-estilo {
+  border: solid 10px white;
+  overflow: hidden;
+  transition: all ease-out 0.2s;
+}
+
+.card-estilo:hover {
+  transform: scale(1.05);
+}
+
+#tarjetas_servicios {
+  height: auto;
+}
+#seccion_servicios2 {
+  height: auto;
+}
+
+#seccion_cotiza {
+  background-image: url(imagenes/ladrillos.jpg);
+  height: 470px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.fondoLadrillos {
+  background-image: url(imagenes/ladrillos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#titulo_cotiza {
+  background-color: none;
+  height: 52px;
+}
+
+#caja_txt_cotiza {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 30px #660033;
+}
+
+#formulario_cotiza {
+  background-color: none;
+  height: 408px;
+}
+
+#formulario {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: red;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 30px #660033;
+  height: px;
+  padding-top: 20px;
+}
+
+#caja_txt_nosotros {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transparenciaNegra {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.transparenciaBlanca {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+footer {
+  background: linear-gradient(#ffffff, #a85958 50%, #ffffff);
+  height: 390px;
+}
+
+#caja_h2_contactanos {
+  float: left;
+  margin-top: 10px;
+  margin-left: 365px;
+  width: 230px;
+  height: 35px;
+}
+
+#caja_mapa {
+  width: 250px;
+  height: 245px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+#caja_h3_p_trabajacon {
+  width: 520px;
+  height: 80px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+#caja_redes_sociales {
+  width: 560px;
+  height: 120px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.destacado_ladrillo {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #660033;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+header,
+#seccion_botonera {
+  text-transform: uppercase;
+}
+
+.enlaces {
+  font-weight: bold;
+  text-decoration: none;
+  color: #660033;
+}
+
+.logo_png {
+  width: 100%;
+}
+
+.h1Grande {
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 7px 5px 10px white;
+  color: #660033;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  text-shadow: 7px 5px 10px #660033;
+  text-transform: uppercase;
+  color: #660033;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #660033;
+}
+
+p {
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+#lema_txt {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0;
+  text-shadow: 3px 2px 3px white;
+  color: #660033;
+}
+
+ul {
+  margin-left: -10px;
+  padding: 0px;
+  list-style-type: none;
+  text-shadow: 7px 5px 10px #660033;
+  width: 100%;
+  align-items: center;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+
+  color: #660033;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 45px;
+  overflow: hidden;
+  transition: all ease-out 0.2s;
+}
+
+li a:hover {
+  background: radial-gradient(#ffffff 1%, #a85958);
+  color: #660033;
+  font-weight: bold;
+  font-size: 20px;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 30px #660033;
+}
+
+/*INICIA DISEÑO RESPONSIVO PARA DISPOSITIVOS 600 A 1023*/
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  header,
+  section,
+  footer {
+    width: 580px;
+    margin-top: 10px;
+  }
+
+  header {
+    background: linear-gradient(#a85958, #ffffff, #a85958);
+    height: 130px;
+  }
+
+  #caja_logo {
+    width: 100px;
+    height: 110px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+
+  #caja_marca {
+    width: 230px;
+    height: 60px;
+    float: right;
+    margin-right: 115px;
+  }
+
+  #caja_lema {
+    width: 410px;
+    height: 25px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  #seccion_botonera {
+    height: 50px;
+    background: linear-gradient(#a85958, #ffffff, #a85958);
+    box-shadow: 0px 0px 30px #660033;
+    position: sticky;
+    top: 5px;
+  }
+
+  #caja_botonera_principal {
+    width: 100%;
+    height: 50px;
+    margin-top: 0px;
+    display: block;
+  }
+
+  ul {
+    width: 100%;
+    margin: 0px;
+    list-style-type: none;
+    text-shadow: 7px 5px 10px #660033;
+    font-size: 13px;
+    background-color: none;
+  }
+
+  ul li {
+    display: inline;
+    margin: 0px;
+    background-color: none;
+  }
+
+  ul li a {
+    display: inline-block;
+    width: 77px;
+    height: 50px;
+    padding: 0px;
+    color: #660033;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 45px;
+    margin-left: auto;
+    background-color: none;
+  }
+
+  ul li a:hover {
+    font-weight: bold;
+    font-size: 16px;
+    width: 85px;
+    box-shadow: 0px 0px 30px #660033;
+  }
+
+  #seccion_inicio {
+    height: 326px;
+  }
+
+  footer {
+    height: 640px;
+  }
+
+  #caja_h2_contactanos {
+    margin-left: 175px;
+  }
+
+  #caja_mapa {
+    margin-right: 300px;
+  }
+
+  #caja_h3_p_trabajacon {
+    margin-left: 30px;
+  }
+
+  #caja_redes_sociales {
+    width: 520px;
+    height: 130px;
+    margin-left: 0px;
+    padding: 30px;
+  }
+
+  ul.botonera_footer li a {
+    width: 100px;
+  }
+
+  .logo_png {
+    width: 100%;
+  }
+
+  .h1Grande {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 7px 5px 10px white;
+    color: #660033;
+    margin: 0px;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    text-shadow: 7px 5px 10px #660033;
+    text-transform: uppercase;
+    color: #660033;
+  }
+
+  h3 {
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #660033;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #lema_txt {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 3px 2px 3px white;
+    color: #660033;
+  }
+
+  ul {
+    margin-left: -15px;
+  }
+} /*FIN MEDIA 600 A 1023*/
+
+@media all and (max-width: 599px) {
+  header,
+  section,
+  footer {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  header {
+    height: auto;
+  }
+
+  #caja_marca {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 0px;
+  }
+
+  #caja_logo {
+    width: 15%;
+    height: auto;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #caja_lema {
+    width: 80%;
+    height: auto;
+    padding: 1%;
+    text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #caja_hamburuesa {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 30px #660033;
+    z-index: 99999999;
+  }
+
+  #txt_menu {
+    display: block;
+    background-color: none;
+  }
+
+  #caja_hamburuesa a {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-shadow: 7px 5px 10px #660033;
+    background-color: none;
+    text-align: right;
+  }
+
+  #seccion_botonera {
+    height: auto;
+    background: linear-gradient(#a85958, #ffffff, #a85958);
+    box-shadow: 0px 0px 30px #660033;
+  }
+
+  #caja_botonera_principal {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: none;
+  }
+
+  .botonera_principal {
+    transition: all 0.4s;
+  }
+
+  #seccion_inicio {
+    height: auto;
+  }
+
+  #caja_txt_servicios2 {
+    width: 50%;
+  }
+
+  #caja_txt_cotiza {
+    width: 50%;
+  }
+
+  #caja_txt_nosotros {
+    width: 50%;
+  }
+
+  footer {
+    background: linear-gradient(#ffffff, #a85958 50%, #ffffff);
+    height: auto;
+  }
+
+  #caja_h2_contactanos {
+    width: 160px;
+    height: 30px;
+    padding-top: 1%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: none;
+  }
+
+  #caja_mapa {
+    width: 90%;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    margin-top: 10px;
+    padding-top: 0px;
+  }
+
+  #caja_h3_p_trabajacon {
+    width: 90%;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  #caja_redes_sociales {
+    width: 80%;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .destacado_ladrillo {
+    font-size: 18px;
+    text-decoration: underline;
+    color: #660033;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  header,
+  #seccion_botonera {
+    text-transform: uppercase;
+  }
+
+  .enlaces {
+    font-weight: bold;
+    text-decoration: none;
+    color: #660033;
+  }
+
+  .logo_png {
+    width: 100%;
+  }
+
+  .h1Grande {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0%;
+    text-shadow: 7px 5px 10px white;
+    color: #660033;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 7px 5px 10px #660033;
+    text-transform: uppercase;
+    color: #660033;
+  }
+
+  h2.estilo_menu {
+    padding-top: 0%;
+    background-color: red;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #660033;
+  }
+
+  p {
+    font-size: 16px;
+    word-wrap: break-word;
+  }
+
+  #lema_txt {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 3px 2px 3px white;
+    color: #660033;
+  }
+
+  ul.botonera_principal li a {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    border-radius: 45px;
+    font-size: 16px;
+    background-color: none;
+  }
+
+  ul.botonera_principal li a:hover {
+    margin-left: -20px;
+    font-size: 18px;
+    width: 106%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+  }
+
+  .fechaNoticias {
+    display: none;
+  }
+
+  ul.botonera_footer li a {
+    display: table-cell;
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    border-radius: 45px;
+    font-size: 16px;
+  }
+
+  ul.botonera_footer li a:hover {
+    font-size: 18px;
+  }
+} /*FIN MEDIA SMALL DISPLAYS*/

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tuamare</title>
+
+  <link rel="icon" type="image/png" href="imagenes/logo.png">
+
+  <link href="estilos.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/5f7003c002.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/examen7.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/unidad8.js" defer></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div id="caja_marca">
+      <h1 class="h1Grande">tuamare</h1>
+    </div>
+    <div id="caja_logo">
+      <img src="imagenes/logo.png" alt="logo" class="logo_png">
+    </div>
+    <div id="caja_lema">
+      <p id="lema_txt"><em>"construyendo tu futuro, un buen futuro"</em></p>
+    </div>
+  </header>
+
+  <section id="seccion_botonera">
+    <nav id="caja_hamburuesa">
+      <span id="txt_menu"><h2>menú</h2></span>
+      <a onclick="hamburguesa()"><i class="fas fa-bars"></i></a>
+    </nav>
+    <nav id="caja_botonera_principal">
+      <ul class="botonera_principal">
+        <li><a href="#seccion_inicio">inicio</a></li><li><a href="#seccion_servicios2">servicio</a></li><li><a data-bs-toggle="modal" data-bs-target="#exampleModal" class="destacado_ladrillo1">cotiza</a></li><li><a href="#seccion_nosotros">nosotros</a></li><li><a href="#seccion_noticias2">noticias</a></li><li><a href="#seccion_contacto">contacto</a></li><li><a data-bs-toggle="modal" data-bs-target="#exampleModal2" class="destacado_ladrillo1">ingresa</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section id="seccion_inicio">
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="25000">
+          <video src="videos/inicio1.mp4" class="d-block w-100" controls alt="Edificios"></video>
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/inicio2.jpg" class="d-block w-100" alt="Edificios">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/inicio3.jpg" class="d-block w-100" alt="construccion">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/inicio4.jpg" class="d-block w-100" alt="interiores">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+  <section id="seccion_servicios2">
+
+    <div class="container-fluid">
+      <div class="row" id="titulo_servicios2">
+        <div class="col-lg-3 pt-2 mt-2 rounded-3 col-md-4 col-sm-4 estandarcajas" id="caja_txt_servicios2">
+          <h2>servicios</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8 rounded-3 offset-2 estandarcajas" id="caja_contenido_servicios2">
+          <p>Contamos con <strong> el mejor personal y <u>profecionales capaces</u></strong> para realizar tu proyecto,
+            <strong>nos especializamos en diseño y construccion de:</strong>
+          </p>
+        </div>
+      </div>
+      <div class="row" id="tarjetas_servicios">
+        <div class="col-sm pb-3 p-3" id="tarjeta_servicios_1">
+          <div class="card estandarcajas w-100 card-estilo bg-transparent" style="width: 18rem;">
+            <div class="card-body transparenciaBlanca">
+              <h3 class="card-title text-center">edificios</h3>
+            </div>
+            <img src="imagenes/edificios.jpg" class="card-img-top" alt="edificio">
+          </div>
+        </div>
+        <div class="col-sm pb-3 p-3" id="tarjeta_servicios_2">
+          <div class="card estandarcajas w-100 card-estilo bg-transparent" style="width: 18rem;">
+            <img src="imagenes/casas.jpg" class="card-img-top" alt="casa">
+            <div class="card-body transparenciaBlanca">
+              <h3 class="card-title text-center">casas</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm pb-3 p-3" id="tarjeta_servicios_3">
+          <div class="card estandarcajas w-100 card-estilo bg-transparent" style="width: 18rem;">
+            <div class="card-body transparenciaBlanca">
+              <h3 class="card-title text-center">interiores</h3>
+            </div>
+            <img src="imagenes/interiores.jpg" class="card-img-top" alt="interiores">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body fondoLadrillos rounded">
+          <div class="container-fluid">
+
+            <button type="button" class="btn-close border" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="row" id="titulo_cotiza">
+              <div class="col-lg-4 pt-2 mt-2 rounded-3 col-md-4 col-sm-4" id="caja_txt_cotiza">
+                <h2>cotiza</h2>
+              </div>
+            </div>
+
+            <div class="row" id="formulario_cotiza">
+              <div class="col-11 rounded-3" id="formulario">
+                <form>
+
+                  <div class="row">
+                    <div class="col-6">
+                      <input type="text" placeholder="Nombre *" class="form-control" name="nombre" required
+                        maxlength="15">
+                    </div>
+                    <div class="col-6">
+                      <input type="text" placeholder="Apellido *" class="form-control" name="nombre" required
+                        maxlength="15">
+                    </div>
+                  </div>
+
+
+                  <div class="row">
+                    <div class="col-6">
+                      <input type="number" placeholder="Teléfono (Opcional)" class="form-control" name="Telefono"
+                        maxlength="11">
+                    </div>
+
+                    <div class="col-6">
+                      <input type="number" placeholder="Celular *" class="form-control" name="Celular" required
+                        maxlength="11">
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <input type="email" placeholder="Correo Electronico *" class="form-control" name="correo" required
+                      maxlength="80">
+                  </div>
+
+                  <div class="col-12">
+                    <select class="form-control">
+                      <option> ¿Qué quieres construir? *</option>
+                      <option value="CASAS">Casa</option>
+                      <option value="EDIFICIOS">Edifico</option>
+                      <option value="INTERIORES">Interiores</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <textarea placeholder="Comentarios (Opcional)" class="form-control" rows="6"
+                      maxlength="1000"></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <input type="submit" class="btn-secondary">
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="seccion_nosotros" class="fondoConstruccion">
+    <div class="row">
+      <div class="col-lg-3 pt-2 mt-2 rounded-3 col-md-4 col-sm-4 estandarcajas" id="caja_txt_nosotros">
+        <h2>nosotros</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10 offset-1 mt-3">
+        <div class="card mb-3 w-100">
+          <div class="row g-0">
+            <div class="col-md-4 border estandarcajas">
+              <img src="imagenes/fundadora.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8 border">
+              <div class="card-body">
+                <h3 class="card-title">historia</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="seccion_noticias2" class="fondoConstruccion">
+    <div class="row">
+      <div class="col-lg-2 pt-2 mt-2 rounded-3 col-md-4 col-sm-4 estandarcajas" id="caja_txt_nosotros">
+        <h2>noticias</h2>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-10 offset-1 pt-3 pb-3 mt-3 mb-3">
+
+        <div id="carouselExampleDark2" class="carousel carousel-dark slide estandarcajas" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2"
+              aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="imagenes/noticia1.jpg" class="d-block w-100" alt="estrucctura">
+              <div class="carousel-caption d-md-block transparenciaBlanca">
+                <p>Arrancamos la construccion del nuevo centro comercial <span class="destacado_ladrillo">"El Condado
+                    Shoping"</span> ubicado en Comodoro Rivadavia. La obra está estimada a terminarse en tan solo 4
+                  meses.</p>
+                <h5 class="fechaNoticias">20/08/2021</h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imagenes/noticia2.jpg" class="d-block w-100" alt="estadio">
+              <div class="carousel-caption d-md-block transparenciaBlanca">
+                <p>Finalizamos la construccion del nuevo estadio <span class="destacado_ladrillo">"El Porteñito"</span>
+                  ubicado en el centro de CABA. El estadio esta preparado para albergar hasta 130mil espectadores <span
+                    class="fechaNoticias">rompiendo records y galardonado por su moderna infraestructura.</span></p>
+                <h5 class="fechaNoticias">11/12/2020</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/noticia3.jpg" class="d-block w-100" alt="obreros">
+              <div class="carousel-caption d-md-block transparenciaBlanca">
+                <p>Se implementa el uso del barbijo por parte de los trabajadores en todas nuestras obras</p>
+                <h5 class="fechaNoticias">10/01/2020</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">ingresa</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>esta seccion aún no está disponible</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="seccion_contacto">
+
+    <div id="caja_h2_contactanos">
+      <h2>contactanos</h2>
+    </div>
+
+    <div id="caja_mapa">
+      <h3>Visitanos en:</h3>
+      <p>Av. Siempre Viva 666 y Peron.<br /> Puerto Madryn-Argentina</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d11719.182540662343!2d-65.05561021120606!3d-42.75037585111097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xbe024a6f6822b579%3A0x1c9ab1c703deee53!2sPuerto%20Madryn%2C%20Chubut!3m2!1d-42.7460544!2d-65.0390288!5e0!3m2!1ses!2sar!4v1625935839380!5m2!1ses!2sar"
+        width="100%" height="60%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div id="caja_h3_p_trabajacon">
+      <h3>trabaja con nosotros</h3>
+      <p>Si quieres formar parte de <strong>Tuamare</strong> envianos tu curriculum a <a
+          href="mailto:duemarfra@gmail.com" class="enlaces" target="new">este enlace</a>.</p>
+    </div>
+
+    <nav id="caja_redes_sociales">
+      <h3>tambien siguenos en:</h3><br />
+      <ul class="botonera_footer">
+        <li><a href="https://www.facebook.com/" target="new"><i class="fab fa-facebook-square"></i></i> Faceboock</a>
+        </li>
+        <li><a href="https://www.instagram.com/?hl=es" target="new"><i class="fab fa-instagram-square"></i>
+            Instagram</a></li>
+        <li><a href="https://twitter.com/?lang=es" target="new"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+        <li><a href="https://ar.linkedin.com/" target="new"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+        <li><a href="https://www.youtube.com/" target="new"><i class="fab fa-youtube"></i> YouTube</a></li>
+        <li><a href="https://wa.me/qr/QKMJSAOQSO2YF1" target="new"><i class="fab fa-whatsapp-square"></i> Whatsapp</a>
+        </li>
+        <li><a href="mailto:duemarfra@gmail.com" target="new"><i class="fas fa-envelope-square"></i> Correo</a></li>
+      </ul>
+    </nav>
+
+  </footer>
+</body>
+
+</html>
